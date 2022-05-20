@@ -2,9 +2,14 @@
 
 return [
 
-    '/' => [
+    '/slow' => [
         'controller' => 'Delivery',
-        'action' => 'index'
+        'action' => 'slow'
+    ],
+
+    '/fast' => [
+        'controller' => 'Delivery',
+        'action' => 'fast'
     ],
 
 ];

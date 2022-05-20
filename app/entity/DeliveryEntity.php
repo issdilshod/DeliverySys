@@ -5,9 +5,10 @@ class DeliveryEntity{
 
     public function getEntity(){
         return [
-            'price' => '',
-            'date' => '',
-            'error' => ''
+            'base_url' => '',
+            'sourceKladr' => '',
+            'targetKladr' => '',
+            'weight' => '',
         ];
     }
 

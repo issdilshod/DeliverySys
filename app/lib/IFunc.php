@@ -17,10 +17,6 @@ class IFunc{
 		return $data;
 	}
 
-	/**
-	 * Retruns array() from array
-	 * @param from array(), to array()
-	 */
 	public function copyPost($from, $post_array){
 		foreach ($post_array as $key => $value){
 			if(isset($from[$key])){
@@ -30,7 +26,7 @@ class IFunc{
 		return $post_array;
 	}
 
-	function sendReq($entity){
+	public function sendReq($entity){
 		$curl = curl_init($entity['base_url']);
 		curl_setopt($curl, CURLOPT_POST, 1);
 		curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($entity, '', '&'));

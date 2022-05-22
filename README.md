@@ -6,6 +6,5 @@ Requests:
 - FastDelivery: /fast -> POST [base_url=@var, sourceKladr=@var, targetKladr=@var, weight=@float]
 - SlowDelivery: /slow -> POST [base_url=@var, sourceKladr=@var, targetKladr=@var, weight=@float]
 
-Response:
-- FastDelivery: JSON [price: @float, date: @var, error: @var]
-- SlowDelivery: JSON [price: @float, date: @var, error: @var]
+Responses:
+- JSON [price: @float, date: @var, error: @var]
